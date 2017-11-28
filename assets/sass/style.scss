@@ -18,8 +18,12 @@ h1 {
     text-align: center;
 }
 
-.shadow-bottom {
+.top-menu {
     box-shadow: 0px 15px 10px -15px #b0b0b0;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .border-right {
