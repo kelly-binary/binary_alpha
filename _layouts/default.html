@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="{{ site.lang | default: page.lang | default: 'en' }}">
   {% include head.html %}
-  <body>
+  <body class="full-width">
     {% include header.html %}
-    <div class="grid">
-        <div class="col-12">
-            {{ content }}
-        </div>
+    <div class="mdc-layout-grid--fluid">
+        {{ content }}
     </div>
   </body>
 </html>
