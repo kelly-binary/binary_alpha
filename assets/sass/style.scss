@@ -75,6 +75,21 @@ h1 {
     }
 }
 
+.set-height {
+    &.full {
+        height: 100%;
+    }
+    &.max-eighty {
+        max-height: 80%;
+    }
+}
+
+.set-width {
+    &.full {
+        width: 100%;
+    }
+}
+
 .menu-toggle {
     border-right: 1px solid rgba(0,0,0,.2);
 }
