@@ -1,15 +1,9 @@
-.binary-nav {
-    display: block;
-    background: url($baseurl + '/assets/img/logo-blue.svg');
-    background-size: 40px 40px;
-    width: 40px;
-    height: 40px;
-}
+.navbar-icons {
+    color: #2A3052;
+    font-size: 1.5rem;
 
-.binary-toggle {
-    display: block;
-    background: url($baseurl + '/assets/img/hamburger.svg');
-    background-size: 40px 40px;
-    width: 40px;
-    height: 40px;
+    img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }

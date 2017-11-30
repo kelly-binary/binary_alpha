@@ -3,7 +3,6 @@
 $baseurl: "{{ site.github.url | replace: 'http://', 'https://' }}";
 @charset "utf-8";
 
-@import '../sass/material/grid/mdc-layout-grid.scss';
 @import '../sass/style.scss';
 @import '../sass/icons.scss';
 @import '../sass/typography.scss';
