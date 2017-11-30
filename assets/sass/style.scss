@@ -28,6 +28,7 @@ h1 {
 
 .btn {
     padding: 50px 0;
+    margin-bottom: 1rem;
     text-align: center;
 
     &.small {
@@ -68,4 +69,20 @@ h1 {
 
 .menu-toggle {
     border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.sm-down {
+    &.hide {
+        @media (max-width: 841px) {
+            display: none;
+        }
+    }
+}
+
+.sm-up {
+    &.hide {
+        @media (min-width: 840px) {
+            display: none;
+        }
+    }
 }

@@ -3,48 +3,29 @@ layout: default
 permalink: /trading
 ---
 <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9-desktop mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-12-mobile">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9 mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-12-phone">
         <header>
             <img class="logo" src= {{ "/assets/img/binary-logo.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} alt="Welcome" height="100" width="250"></img>
         </header>
         <h1>Fluid Typography Sass Mixin</h1>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iusto adipisci, cupiditate animi, itaque qui aspernatur vel corrupti labore minima, excepturi ab, fuga rem dolores. Ratione sunt autem iusto aliquid.
-        </p>
-
-        <h2>Heading 2</h2>
-
-        <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iusto adipisci, cupiditate animi, itaque qui aspernatur vel corrupti labore minima, excepturi ab, fuga rem dolores. Ratione sunt autem iusto aliquid.
-        </p>
-        <h1>Fluid Typography Sass Mixin</h1>
-
-        <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iusto adipisci, cupiditate animi, itaque qui aspernatur vel corrupti labore minima, excepturi ab, fuga rem dolores. Ratione sunt autem iusto aliquid.
         </p>
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-12-mobile">
-      <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-              <div class="mdc-elevation--z4 btn">
-                Start Time
-              </div>
-          </div>
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-              <div class="mdc-elevation--z4 btn">
-                Duration
-              </div>
-          </div>
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-              <div class="mdc-elevation--z4 btn small">
-                Amount
-              </div>
-          </div>
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-              <div class="mdc-elevation--z4 btn big">
-                Rise/Fall
-              </div>
-          </div>
-      </div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-12-phone">
+        <div class="mdc-elevation--z4 btn sm-down hide">
+          <span>Start Time</span>
+        </div>
+        <div class="mdc-elevation--z4 btn sm-down hide">
+          <span>Duration</span>
+        </div>
+        <div class="mdc-elevation--z4 btn small sm-down hide">
+          <span>Amount</span>
+        </div>
+        <div class="mdc-elevation--z4 btn big">
+          <span>Rise/Fall</span>
+        </div>
     </div>
 </div>
