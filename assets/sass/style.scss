@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-header {
+.header {
     background-color: #2A3052;
 }
 
@@ -36,6 +36,14 @@ h1 {
     }
     &.big {
         padding: 100px 0;
+
+        @media (max-width: 841px) {
+            padding: 50px 0;
+        }
+    }
+
+    &.modal {
+        padding: 10px 0;
     }
 }
 
