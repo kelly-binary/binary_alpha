@@ -49,6 +49,9 @@ h1 {
             text-transform: capitalize;
         }
     }
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-toolbar {
