@@ -14,9 +14,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.github.url | replace: 'http://', 'https://' }}">
   <link rel="stylesheet" href="{{ "/assets/external/material-components-web.min.css" | prepend: site.github.url | replace: 'http://', 'https://' }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.github.url | replace: 'http://', 'https://' }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <script src="{{ "/assets/external/material-components-web.min.js" | prepend: site.github.url | replace: 'http://', 'https://' }}"></script>
   <script>mdc.autoInit()</script>
 </head>

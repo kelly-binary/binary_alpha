@@ -1,36 +1,37 @@
-<div class="top-menu">
-    <div class="mdc-layout-grid">
-        <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell--span-1 border-right"><span class="binary-toggle"></span></div>
-            <div class="mdc-layout-grid__cell--span-1"><span class="binary-nav"></span></div>
-            <div class="mdc-layout-grid__cell--span-1 sm-hidden"><a href= {{ "/trading" | prepend: site.github.url | replace: 'http://', 'https://' }}><span>Trading</span></a></div>
-            <div class="mdc-layout-grid__cell--span-1 sm-hidden"><a href= {{ "/portfolio" | prepend: site.github.url | replace: 'http://', 'https://' }}><span>Portfolio</span></a></div>
-            <div class="mdc-layout-grid__cell--span-1"></div>
-        </div>
-    </div>
-</div>
+<header class="mdc-toolbar menu-toolbar mdc-elevation--z4">
+  <div class="mdc-toolbar__row">
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+        <a href="#" class="material-icons mdc-toolbar__menu-icon navbar-icons menu-toggle">menu</a>
+        <a class="mdc-toolbar__menu-icon navbar-icons" href="#"><img src= {{ "/assets/img/logo-blue.svg" | prepend: site.github.url | replace: 'http://', 'https://' }} alt="Home"></img></a>
+        <nav class="mdc-tab-bar menu-tab">
+            <a class="mdc-tab mdc-tab--active" href= {{ "/trading" | prepend: site.github.url | replace: 'http://', 'https://' }}><span>Trade</span></a>
+            <a class="mdc-tab" href= {{ "/portfolio" | prepend: site.github.url | replace: 'http://', 'https://' }}><span>Portfolio</span></a>
+            <a class="mdc-tab" href="#"><span>Statement</span></a>
+            <a class="mdc-tab" href="#"><span>Cashier</span></a>
+            <span class="mdc-tab-bar__indicator"></span>
+        </nav>
+    </section>
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-center">
+    </section>
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+        <a href="#" class="material-icons mdc-toolbar__menu-icon navbar-icons border-left">notifications_none</a>
+    </section>
+  </div>
+</header>
 
 <aside class="mdc-temporary-drawer mdc-typography">
   <nav class="mdc-temporary-drawer__drawer">
 
-    <header class="mdc-temporary-drawer__header">
-      <div class="mdc-temporary-drawer__header-content">
-        Header content goes here
-      </div>
-    </header>
-
     <nav id="icon-with-text-demo" class="mdc-temporary-drawer__content mdc-list">
-      <a class="mdc-list-item mdc-temporary-drawer--selected" href="#">
-        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
-      </a>
-      <a class="mdc-list-item" href="#">
-        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
-      </a>
+      <a class="mdc-list-item mdc-temporary-drawer--selected" href= {{ "/trading" | prepend: site.github.url | replace: 'http://', 'https://' }}><i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Trade</a>
+      <a class="mdc-list-item" href= {{ "/portfolio" | prepend: site.github.url | replace: 'http://', 'https://' }}><i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Portfolio</a>
+      <a class="mdc-list-item" href="#"><i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Statement</a>
+      <a class="mdc-list-item" href="#"><i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Cashier</a>
     </nav>
   </nav>
 </aside>
 
 <script>
     let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'));
-    document.querySelector('.binary-toggle').addEventListener('click', () => drawer.open = true);
+    document.querySelector('.menu-toggle').addEventListener('click', () => drawer.open = true);
 </script>
